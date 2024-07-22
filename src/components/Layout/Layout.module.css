@@ -1,0 +1,74 @@
+header {
+    background-color: rgb(253, 211, 198);
+    color: rgb(110, 110, 110);
+    border-bottom: 1px solid #d6d5d5;
+    justify-content: flex-start;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+}
+
+footer {
+    background-color: rgb(253, 211, 198);
+    color: black;
+    border-bottom: 1px solid #d6d5d5;
+    justify-content: flex-end;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    padding-right: 1rem;
+}
+
+.layout {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.page {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.sideNavbar {
+    background-color: rgb(250, 232, 222);
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+@media (min-width: 768px) {
+    .sideNavbar {
+        width: 300px;
+    }
+}
+
+.sidebarItem {
+    font-size: 1.0rem;
+    padding-bottom: 0.5rem;
+}
+
+.sidebarItem {
+    text-align: left;
+}
+
+.sidebarItem .sidebarLink {
+    text-decoration: none;
+    color: rgb(102, 102, 102);
+    padding: 1.0rem;
+    display: block;
+    transition: 0.3s;
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.4);
+        color: black;
+    }
+}
+
+.sidebarItem .sidebarLinkActive {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+    padding-left: 0.5rem;
+}
